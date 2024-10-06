@@ -26,12 +26,12 @@ function encastre() = top_cilindro_encastre();
 
 // multiplico los encastres, pero como no sé si son 8 o 12, hago los dos...
 for( pos = [ 0 : 3 ]) {
-    translate([ ancho/2/2, (pos*10) + 10, alto ]){
-        //cylinder(h=altura_encastre, r=radio_encastre);
+    translate([ ancho/2/2, (pos*15) + 8, alto ]){
         top_cilindro_encastre();
     }
-    translate([ ancho*3/2/2, (pos*10) + 10, alto ]){
-        //cylinder(h=altura_encastre, r=radio_encastre);
+}
+for( pos= [ 0 : 5 ]){
+    translate([ ancho*3/2/2, (pos*9) + 8, alto ]){
         top_cilindro_encastre();
     }
 }
